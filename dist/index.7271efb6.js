@@ -27538,8 +27538,8 @@ parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
 parcelHelpers.export(exports, "LOGO", ()=>LOGO);
 parcelHelpers.export(exports, "MENU_API", ()=>MENU_API);
 const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-const LOGO = "https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png";
-const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.2958104&lng=76.6393805&restaurantId=";
+const LOGO = "https://thingproxy.freeboard.io/fetch/https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png";
+const MENU_API = "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.2958104&lng=76.6393805&restaurantId=";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -35966,7 +35966,7 @@ const Body = ()=>{
         fetchData();
     }, []);
     const fetchData = async ()=>{
-        const data = await fetch("https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING");
+        const data = await fetch("https://thingproxy.freeboard.io/fetch/https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING");
         const value = await data.json();
         setListOfRestaurants(value?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurant(value?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
